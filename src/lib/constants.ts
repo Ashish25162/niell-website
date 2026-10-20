@@ -108,6 +108,14 @@ export const COURSES = [
 
 export const TESTIMONIALS = [
   {
+    name: "Ashish Singh",
+    role: "Aspiring Software Developer",
+    rating: 5,
+    quote:
+      "I used to hesitate a lot and struggled to speak English in front of people. Ranjan Sir's practical sessions and friendly environment removed all my fear. Today, I can speak fluent English with complete confidence!",
+    course: "Spoken English & Confidence Building",
+  },
+  {
     name: "Aman Sharma",
     role: "Software Engineer at TCS, Indore",
     rating: 5,
@@ -130,14 +138,6 @@ export const TESTIMONIALS = [
     quote:
       "I needed to speak with vendors and national clients with authority. The personality development and public speaking classes at NIELL gave me the stage presence and vocabulary I always lacked.",
     course: "Public Speaking & Personality Development",
-  },
-  {
-    name: "Ashish Singh",
-    role: "Student, Indore",
-    rating: 5,
-    quote:
-      "I used to hesitate a lot and struggled to speak English in front of people. Ranjan Sir's practical sessions and friendly environment removed all my fear. Today, I can speak fluent English with complete confidence!",
-    course: "Spoken English & Confidence Building",
   },
 ];
 
