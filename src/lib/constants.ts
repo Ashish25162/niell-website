@@ -16,6 +16,12 @@ export const INSTITUTE_INFO = {
     state: "Madhya Pradesh",
     pincode: "452010",
     full: "Behind Radisson Hotel, near H.P. Petrol Pump, Vijay Nagar, Indore, Madhya Pradesh – 452010",
+    mapsUrl: "https://maps.app.goo.gl/EFe2FCNhxMoi4CM36",
+    coordinates: {
+      latitude: 22.7503657,
+      longitude: 75.9000074,
+    },
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3787720978713!2d75.8974325!3d22.7503657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2aaab0e2229%3A0x620662f9fe6c521e!2sNiell%20Spoken%20English%20Classes!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
   },
   registeredAddress: {
     title: "Registered / Alternate Office",

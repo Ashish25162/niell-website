@@ -105,9 +105,10 @@ export default function RootLayout({
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": 22.745892,
-          "longitude": 75.894375,
+          "latitude": 22.7503657,
+          "longitude": 75.9000074,
         },
+        "hasMap": "https://maps.app.goo.gl/EFe2FCNhxMoi4CM36",
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
@@ -152,8 +153,8 @@ export default function RootLayout({
         />
         <meta name="geo.region" content="IN-MP" />
         <meta name="geo.placename" content="Indore" />
-        <meta name="geo.position" content="22.745892;75.894375" />
-        <meta name="ICBM" content="22.745892, 75.894375" />
+        <meta name="geo.position" content="22.7503657;75.9000074" />
+        <meta name="ICBM" content="22.7503657, 75.9000074" />
       </head>
       <body className="antialiased min-h-screen selection:bg-blue-600 selection:text-white">
         {children}

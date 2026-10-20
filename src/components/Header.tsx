@@ -29,10 +29,16 @@ export default function Header() {
             <span>New Batches Starting Every Monday! Limited to 15 Students/Batch.</span>
           </div>
           <div className="flex items-center gap-4 text-slate-300 text-xs">
-            <span className="hidden md:inline-flex items-center gap-1">
+            <a
+              href={INSTITUTE_INFO.primaryAddress.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:inline-flex items-center gap-1 hover:text-white transition-colors"
+              title="Open Niell Spoken English Classes in Google Maps"
+            >
               <MapPin className="w-3.5 h-3.5 text-amber-400" />
               Behind Radisson Hotel, Vijay Nagar, Indore
-            </span>
+            </a>
             <a
               href={`tel:${INSTITUTE_INFO.phone}`}
               className="inline-flex items-center gap-1 font-semibold text-amber-300 hover:text-white transition-colors"

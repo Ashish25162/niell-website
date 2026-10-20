@@ -130,10 +130,10 @@ export default function ContactLocation() {
           {/* Right Column: Google Maps Location Embed & Route Guidance */}
           <div className="lg:col-span-7 flex flex-col h-full">
             <div className="bg-slate-100 rounded-3xl overflow-hidden border border-slate-200 shadow-md flex-1 min-h-[380px] relative flex flex-col">
-              {/* Map embed for Vijay Nagar / Radisson Hotel Indore */}
+              {/* Official Google Maps Verified Place Embed */}
               <iframe
-                title="NIELL Spoken English Classes Location - Behind Radisson Hotel, Vijay Nagar, Indore"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.524856037703!2d75.894375!3d22.745892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fda08f090bb7%3A0xc480b0db37b58957!2sRadisson%20Blu%20Hotel%20Indore!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                title="Niell Spoken English Classes - Official Google Maps Location"
+                src={INSTITUTE_INFO.primaryAddress.embedUrl}
                 width="100%"
                 height="100%"
                 className="w-full h-full min-h-[380px] border-0"
@@ -145,18 +145,16 @@ export default function ContactLocation() {
               <div className="p-4 bg-white border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
                 <div className="flex items-center gap-2 text-xs text-slate-700">
                   <Navigation className="w-4 h-4 text-blue-700" />
-                  <span>Located Behind Radisson Hotel, adjacent to H.P. Petrol Pump</span>
+                  <span>Niell Spoken English Classes • Behind Radisson Hotel, Indore</span>
                 </div>
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                    "Behind Radisson Hotel, near H.P. Petrol Pump, Vijay Nagar, Indore"
-                  )}`}
+                  href={INSTITUTE_INFO.primaryAddress.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-white bg-blue-700 hover:bg-blue-800 transition-colors shadow-sm whitespace-nowrap"
                 >
                   <Navigation className="w-3.5 h-3.5" />
-                  <span>Open in Google Maps</span>
+                  <span>Get Driving Directions</span>
                 </a>
               </div>
             </div>
