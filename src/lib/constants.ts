@@ -123,7 +123,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "Aman Sharma",
-    role: "Software Engineer at TCS, Indore",
+    role: "Software Engineer, Indore",
     rating: 5,
     quote:
       "I was from a Hindi-medium background and used to freeze up in client calls. Joining NIELL under Ranjan Sir changed everything. His personalized attention and daily GD sessions built my confidence within just 2 months!",
@@ -131,7 +131,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "Pooja Verma",
-    role: "College Student (DAVV Indore)",
+    role: "College Student, Indore",
     rating: 5,
     quote:
       "Ranjan Singh Sir does not just teach grammar rules from a book; he makes everyone speak from Day 1. The campus behind Radisson Hotel is very accessible and the learning atmosphere is 100% supportive.",
