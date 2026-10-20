@@ -55,7 +55,7 @@ export default function Hero() {
               </div>
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                <span>Special Attention for Hindi Medium Students</span>
+                <span>Ideal for Both English & Hindi Medium Learners</span>
               </div>
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />

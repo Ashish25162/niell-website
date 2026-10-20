@@ -41,9 +41,9 @@ export const COURSES = [
   {
     id: "foundation-english",
     title: "Basic English & Grammar Foundation",
-    level: "Beginner (Hindi to English)",
+    level: "Beginner to Conversational",
     duration: "60 Days",
-    tag: "Most Popular for Beginners",
+    tag: "Most Popular for Foundation",
     badgeColor: "bg-blue-100 text-blue-800 border-blue-200",
     description:
       "Specially designed for students and beginners hesitant to speak English. Learn correct tense structure, everyday vocabulary, and overcome hesitation step-by-step.",
@@ -52,7 +52,7 @@ export const COURSES = [
       "Essential grammar & sentence formation",
       "Daily 100+ practical conversation phrases",
       "1-on-1 speaking practice with Ranjan Sir",
-      "Hindi-to-English translation shortcuts",
+      "Direct thought-in-English training (stops mental translation)",
     ],
     batchTimings: "Morning: 8:00 AM, 9:30 AM | Evening: 5:00 PM, 6:30 PM",
   },
@@ -154,9 +154,9 @@ export const FAQS = [
       "Our main coaching center is conveniently located Behind Radisson Hotel, near H.P. Petrol Pump, Vijay Nagar, Indore – 452010. We also have a registered office at 105, Bhagya Shree Colony, Ganga Devi Nagar, Indore. Both locations are easily accessible from all parts of Indore.",
   },
   {
-    question: "I am from a Hindi-medium school and hesitant to speak. Can I join?",
+    question: "Is NIELL suitable for both English-medium and Hindi-medium students?",
     answer:
-      "Absolutely! Over 70% of our students come from Hindi-medium backgrounds. Founder Ranjan Singh specializes in friendly, hesitation-free training where you are never judged. We start from ground-level sentence formation before progressing to full fluency.",
+      "Yes, 100%! We train students from both backgrounds. English-medium students join us to eliminate hesitation, refine their vocabulary, and master public speaking & corporate interviews. Hindi-medium students gain a supportive, judgment-free atmosphere where they build rock-solid grammar and start speaking fluently without awkward mental translation.",
   },
   {
     question: "How does the Free Demo Class work?",

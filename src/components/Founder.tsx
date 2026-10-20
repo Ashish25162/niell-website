@@ -94,7 +94,7 @@ export default function Founder() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                  <span>Friendly, Hindi-to-English transition</span>
+                  <span>Tailored for English & Hindi medium students</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />

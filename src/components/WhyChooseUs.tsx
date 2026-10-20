@@ -16,9 +16,9 @@ export default function WhyChooseUs() {
     },
     {
       icon: Target,
-      title: "Hindi-Medium Friendly Pedagogy",
+      title: "Effective for Both English & Hindi Mediums",
       description:
-        "We understand the exact psychological hurdles Hindi-medium learners face. We teach you how to stop translating in your head and start thinking in English.",
+        "Whether you studied in English medium and need fluency polish, stage confidence & interview skills, or come from Hindi medium and want to stop translating in your head—our method adapts to your level.",
     },
     {
       icon: Award,
