@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { INSTITUTE_INFO, COURSES } from "@/lib/constants";
 import { GraduationCap, Phone, MessageCircle, MapPin, Mail, Heart } from "lucide-react";
 
@@ -11,8 +12,14 @@ export default function Footer() {
           {/* Col 1: Institute Brand & Mission */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-11 h-11 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-md">
-                <GraduationCap className="w-6 h-6 text-amber-300" />
+              <div className="w-12 h-12 rounded-xl bg-white p-1 border border-slate-700 overflow-hidden shadow-md flex items-center justify-center">
+                <Image
+                  src="/logo.png"
+                  alt="NIELL Spoken English Classes Logo"
+                  width={44}
+                  height={44}
+                  className="w-full h-full object-contain rounded-lg"
+                />
               </div>
               <div>
                 <span className="text-xl font-black text-white tracking-tight">NIELL</span>

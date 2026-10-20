@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { INSTITUTE_INFO } from "@/lib/constants";
 import { MessageCircle, Phone, Award, CheckCircle2, GraduationCap, Quote } from "lucide-react";
 
@@ -15,7 +16,15 @@ export default function Founder() {
               <div className="relative group">
                 <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-3xl bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-500 p-1.5 shadow-2xl">
                   <div className="w-full h-full bg-slate-900 rounded-[22px] flex flex-col items-center justify-center p-6 text-center">
-                    <GraduationCap className="w-16 h-16 text-amber-300 mb-2" />
+                    <div className="w-16 h-16 rounded-2xl bg-white p-1 mb-2 shadow-md flex items-center justify-center">
+                      <Image
+                        src="/logo.png"
+                        alt="NIELL Official Logo"
+                        width={60}
+                        height={60}
+                        className="w-full h-full object-contain rounded-xl"
+                      />
+                    </div>
                     <span className="text-2xl font-black tracking-tight text-white">
                       Ranjan Singh
                     </span>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { INSTITUTE_INFO } from "@/lib/constants";
 import { Phone, MessageCircle, Menu, X, GraduationCap, MapPin, Sparkles } from "lucide-react";
 
@@ -48,8 +49,15 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo & Brand Identity */}
           <Link href="#hero" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-700 via-indigo-800 to-navy-950 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
-              <GraduationCap className="w-7 h-7 text-amber-300" />
+            <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-slate-200/90 shadow-sm bg-white flex items-center justify-center group-hover:scale-105 transition-transform p-0.5">
+              <Image
+                src="/logo.png"
+                alt="NIELL Spoken English Classes Logo"
+                width={48}
+                height={48}
+                className="w-full h-full object-contain rounded-lg"
+                priority
+              />
             </div>
             <div>
               <div className="flex items-center gap-1.5">

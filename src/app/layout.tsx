@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "NIELL Spoken English Classes Indore | Mentored by Ranjan Singh",
     description:
@@ -35,12 +39,21 @@ export const metadata: Metadata = {
     siteName: "NIELL Spoken English Classes",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 447,
+        height: 447,
+        alt: "NIELL Spoken English Classes Official Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "NIELL Spoken English Classes | Vijay Nagar, Indore",
     description:
       "Master English fluency & personality development under expert mentor Ranjan Singh. Behind Radisson Hotel, Vijay Nagar, Indore.",
+    images: ["/logo.png"],
   },
   robots: {
     index: true,
@@ -70,6 +83,8 @@ export default function RootLayout({
         "name": "NIELL Spoken English Classes",
         "alternateName": "NIELL English Classes Indore",
         "slogan": "Join and Feel the Changes",
+        "logo": "https://niellenglish.com/logo.png",
+        "image": "https://niellenglish.com/logo.png",
         "description":
           "Premier English speaking and communication training institute in Indore founded by Ranjan Singh.",
         "url": "https://niellenglish.com",
