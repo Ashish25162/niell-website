@@ -132,8 +132,8 @@ export const TESTIMONIALS = [
     course: "Public Speaking & Personality Development",
   },
   {
-    name: "Sneha Patel",
-    role: "Aspirant for MNC Placement",
+    name: "Ashish Singh",
+    role: "Selected in Campus Placement, Indore",
     rating: 5,
     quote:
       "The mock interview training by Ranjan Sir is top class. He pointed out my filler words, taught me how to frame answers, and I cleared my job interview on the first attempt!",
