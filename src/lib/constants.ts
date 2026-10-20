@@ -133,11 +133,11 @@ export const TESTIMONIALS = [
   },
   {
     name: "Ashish Singh",
-    role: "Selected in Campus Placement, Indore",
+    role: "Student, Indore",
     rating: 5,
     quote:
-      "The mock interview training by Ranjan Sir is top class. He pointed out my filler words, taught me how to frame answers, and I cleared my job interview on the first attempt!",
-    course: "Job Interview Mastery",
+      "I used to hesitate a lot and struggled to speak English in front of people. Ranjan Sir's practical sessions and friendly environment removed all my fear. Today, I can speak fluent English with complete confidence!",
+    course: "Spoken English & Confidence Building",
   },
 ];
 
