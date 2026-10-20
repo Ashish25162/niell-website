@@ -1,7 +1,7 @@
 export const INSTITUTE_INFO = {
   name: "NIELL Spoken English Classes",
   shortName: "NIELL English",
-  tagline: "Speak English Confidently & Fluently",
+  tagline: "Join and Feel the Changes",
   founder: "Ranjan Singh",
   founderTitle: "Founder & Master English Trainer",
   phone: "6266394121",

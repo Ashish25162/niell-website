@@ -11,15 +11,21 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Core Value Proposition & Headings */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            {/* Top Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 border border-blue-200/60 text-blue-900 text-xs sm:text-sm font-semibold shadow-sm">
-              <div className="flex items-center text-amber-500">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                ))}
+            {/* Top Badges */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 border border-blue-200/60 text-blue-900 text-xs sm:text-sm font-semibold shadow-sm">
+                <div className="flex items-center text-amber-500">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <span className="text-slate-700">|</span>
+                <span>Indore&apos;s Leading Spoken English Institute</span>
               </div>
-              <span className="text-slate-700">|</span>
-              <span>Indore&apos;s Leading Spoken English Institute</span>
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-300 text-amber-900 text-xs sm:text-sm font-black shadow-sm">
+                <Sparkles className="w-3.5 h-3.5 text-amber-600" />
+                <span>&ldquo;Join and Feel the Changes&rdquo;</span>
+              </div>
             </div>
 
             {/* Main H1 - High SEO weight */}

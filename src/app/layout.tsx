@@ -4,9 +4,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://niellenglish.com"),
-  title: "NIELL Spoken English Classes | Best English Coaching in Indore | By Ranjan Singh",
+  title: "NIELL Spoken English Classes | Join and Feel the Changes | Best English Coaching in Indore | By Ranjan Singh",
   description:
-    "Join NIELL Spoken English Classes in Vijay Nagar, Indore (Behind Radisson Hotel). Mentored by Ranjan Singh. Master spoken English fluency, hesitation removal, grammar, public speaking & interview preparation. Book a free demo class today!",
+    "Join and Feel the Changes with NIELL Spoken English Classes in Vijay Nagar, Indore (Behind Radisson Hotel). Mentored by Ranjan Singh. Master spoken English fluency, hesitation removal, grammar, public speaking & interview preparation. Book a free demo class today!",
   keywords: [
     "NIELL spoken english classes",
     "NIELL English Indore",
@@ -69,6 +69,7 @@ export default function RootLayout({
         "@id": "https://niellenglish.com/#organization",
         "name": "NIELL Spoken English Classes",
         "alternateName": "NIELL English Classes Indore",
+        "slogan": "Join and Feel the Changes",
         "description":
           "Premier English speaking and communication training institute in Indore founded by Ranjan Singh.",
         "url": "https://niellenglish.com",

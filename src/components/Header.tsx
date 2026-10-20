@@ -60,9 +60,15 @@ export default function Header() {
                   Indore
                 </span>
               </div>
-              <p className="text-xs font-semibold text-slate-600 tracking-wide uppercase">
-                Spoken English Classes
-              </p>
+              <div className="flex items-center gap-2">
+                <p className="text-xs font-semibold text-slate-600 tracking-wide uppercase">
+                  Spoken English Classes
+                </p>
+                <span className="hidden sm:inline text-slate-300">•</span>
+                <span className="hidden sm:inline text-[11px] font-bold text-amber-600 italic">
+                  &ldquo;{INSTITUTE_INFO.tagline}&rdquo;
+                </span>
+              </div>
               <p className="text-[10px] text-blue-700 font-medium">
                 Mentored by Ranjan Singh
               </p>

@@ -19,6 +19,9 @@ export default function Footer() {
                 <span className="block text-xs uppercase tracking-wider font-bold text-blue-400">
                   Spoken English Classes
                 </span>
+                <span className="block text-[11px] font-bold text-amber-300 italic tracking-wide mt-0.5">
+                  &ldquo;{INSTITUTE_INFO.tagline}&rdquo;
+                </span>
               </div>
             </div>
 
