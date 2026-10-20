@@ -170,10 +170,11 @@ export default function DemoForm() {
                     <input
                       type="text"
                       required
+                      autoComplete="name"
                       placeholder="e.g. Rahul Sharma"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm bg-slate-50"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-base sm:text-sm bg-slate-50"
                     />
                   </div>
 
@@ -183,17 +184,19 @@ export default function DemoForm() {
                       WhatsApp Number <span className="text-red-500">*</span>
                     </label>
                     <div className="relative">
-                      <span className="absolute left-4 top-3 text-sm font-semibold text-slate-500">
+                      <span className="absolute left-4 top-3 text-base sm:text-sm font-semibold text-slate-500">
                         +91
                       </span>
                       <input
                         type="tel"
+                        inputMode="numeric"
+                        autoComplete="tel"
                         required
                         pattern="[0-9]{10}"
                         placeholder="10-digit mobile number"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full pl-14 pr-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm bg-slate-50"
+                        className="w-full pl-14 pr-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-base sm:text-sm bg-slate-50"
                       />
                     </div>
                   </div>
@@ -205,10 +208,12 @@ export default function DemoForm() {
                     </label>
                     <input
                       type="email"
+                      inputMode="email"
+                      autoComplete="email"
                       placeholder="you@example.com (optional)"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm bg-slate-50"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-base sm:text-sm bg-slate-50"
                     />
                   </div>
 

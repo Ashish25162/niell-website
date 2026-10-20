@@ -1,6 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { INSTITUTE_INFO, FAQS } from "@/lib/constants";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#0a162e",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://niellenglish.com"),
@@ -156,7 +163,7 @@ export default function RootLayout({
         <meta name="geo.position" content="22.7503657;75.9000074" />
         <meta name="ICBM" content="22.7503657, 75.9000074" />
       </head>
-      <body className="antialiased min-h-screen selection:bg-blue-600 selection:text-white">
+      <body className="antialiased min-h-screen selection:bg-blue-600 selection:text-white pb-20 md:pb-0">
         {children}
       </body>
     </html>

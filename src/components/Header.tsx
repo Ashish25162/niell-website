@@ -126,11 +126,18 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex sm:hidden">
+          {/* Mobile & Tablet Menu Button */}
+          <div className="flex lg:hidden items-center gap-2">
+            <a
+              href="#book-demo"
+              className="sm:hidden inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold text-white bg-blue-700"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+              <span>Demo</span>
+            </a>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-700 hover:bg-slate-100"
+              className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 border border-slate-200"
               aria-label="Toggle Navigation Menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
