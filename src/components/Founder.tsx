@@ -14,26 +14,24 @@ export default function Founder() {
             {/* Left: Founder Avatar / Graphic Badge */}
             <div className="lg:col-span-5 flex flex-col items-center text-center">
               <div className="relative group">
-                <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-3xl bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-500 p-1.5 shadow-2xl">
-                  <div className="w-full h-full bg-slate-900 rounded-[22px] flex flex-col items-center justify-center p-6 text-center">
-                    <div className="w-16 h-16 rounded-2xl bg-white p-1 mb-2 shadow-md flex items-center justify-center">
-                      <Image
-                        src="/logo.png"
-                        alt="NIELL Official Logo"
-                        width={60}
-                        height={60}
-                        className="w-full h-full object-contain rounded-xl"
-                      />
+                <div className="w-56 h-72 sm:w-64 sm:h-80 rounded-3xl bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-500 p-1.5 shadow-2xl">
+                  <div className="w-full h-full bg-slate-900 rounded-[22px] relative overflow-hidden flex flex-col justify-end">
+                    <Image
+                      src="/images/ranjan-sir-portrait.jpg"
+                      alt="Ranjan Singh - Founder & Master English Trainer at NIELL Indore"
+                      fill
+                      sizes="(max-width: 640px) 250px, 300px"
+                      className="object-cover object-top"
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent pointer-events-none" />
+                    <div className="relative z-10 p-4 text-center">
+                      <div className="inline-flex items-center gap-1 text-[10px] font-extrabold uppercase tracking-wider text-amber-300 bg-black/70 px-2.5 py-0.5 rounded-full backdrop-blur-sm mb-1">
+                        Founder & Chief Mentor
+                      </div>
+                      <h3 className="text-xl font-black text-white">Ranjan Singh</h3>
+                      <p className="text-[11px] text-slate-300">NIELL Spoken English, Indore</p>
                     </div>
-                    <span className="text-2xl font-black tracking-tight text-white">
-                      Ranjan Singh
-                    </span>
-                    <span className="text-xs text-amber-300 font-semibold uppercase tracking-wider mt-1">
-                      Founder & Chief Mentor
-                    </span>
-                    <span className="text-[11px] text-slate-400 mt-2">
-                      NIELL Spoken English Classes
-                    </span>
                   </div>
                 </div>
 

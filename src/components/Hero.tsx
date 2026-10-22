@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { INSTITUTE_INFO } from "@/lib/constants";
 import { MessageCircle, Phone, Sparkles, CheckCircle2, Star, Users, Award, ShieldCheck, ArrowRight } from "lucide-react";
 
@@ -111,7 +112,25 @@ export default function Hero() {
               {/* Glowing Background Blob */}
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl blur-xl opacity-20 -z-10" />
 
-              <div className="bg-white rounded-3xl border border-slate-200/90 shadow-2xl p-6 sm:p-8 space-y-6">
+              <div className="bg-white rounded-3xl border border-slate-200/90 shadow-2xl p-6 sm:p-8 space-y-5">
+                {/* Real Classroom Photo Card in Hero */}
+                <div className="relative h-44 sm:h-48 w-full rounded-2xl overflow-hidden shadow-inner border border-slate-200">
+                  <Image
+                    src="/images/classroom-gd.jpg"
+                    alt="Active Group Discussion at NIELL Spoken English Indore"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 400px"
+                    className="object-cover"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-transparent flex items-end p-3">
+                    <span className="text-xs font-bold text-white flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                      Live Group Discussion • Vijay Nagar Campus
+                    </span>
+                  </div>
+                </div>
+
                 {/* Founder Badge Header */}
                 <div className="flex items-center gap-4 pb-4 border-b border-slate-100">
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-900 to-indigo-800 flex items-center justify-center text-white shadow-inner flex-shrink-0">

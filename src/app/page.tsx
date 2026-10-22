@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Courses from "@/components/Courses";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Founder from "@/components/Founder";
+import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
 import DemoForm from "@/components/DemoForm";
 import ContactLocation from "@/components/ContactLocation";
@@ -20,6 +21,7 @@ export default function HomePage() {
         <Courses />
         <WhyChooseUs />
         <Founder />
+        <Gallery />
         <Testimonials />
         <DemoForm />
         <ContactLocation />

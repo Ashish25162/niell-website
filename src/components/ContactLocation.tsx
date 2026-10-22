@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { INSTITUTE_INFO } from "@/lib/constants";
 import { MapPin, Phone, MessageCircle, Clock, Building, Navigation, ShieldCheck } from "lucide-react";
 
@@ -42,6 +43,23 @@ export default function ContactLocation() {
               <p className="text-sm text-slate-800 font-medium leading-relaxed pl-1 mb-4">
                 {INSTITUTE_INFO.primaryAddress.full}
               </p>
+
+              {/* Photo of Building Signboard */}
+              <div className="relative h-44 sm:h-52 w-full rounded-2xl overflow-hidden shadow-inner border border-blue-200/80 mb-4">
+                <Image
+                  src="/images/building-exterior.jpg"
+                  alt="NIELL Spoken English Classes Building Signboard Vijay Nagar Indore"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 400px"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-transparent flex items-end p-3">
+                  <span className="text-xs font-bold text-white flex items-center gap-1.5">
+                    <MapPin className="w-3.5 h-3.5 text-amber-400" />
+                    Look for this Yellow Signboard Behind Radisson
+                  </span>
+                </div>
+              </div>
 
               <div className="flex flex-wrap gap-2 text-xs text-slate-600 bg-white/80 p-3 rounded-xl border border-blue-100">
                 <span className="font-semibold text-slate-900">Landmarks:</span>

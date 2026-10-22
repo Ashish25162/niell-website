@@ -14,6 +14,7 @@ export default function Header() {
     { label: "Courses", href: "#courses" },
     { label: "Why NIELL", href: "#why-us" },
     { label: "Meet Founder", href: "#founder" },
+    { label: "Campus Life", href: "#gallery" },
     { label: "Reviews", href: "#reviews" },
     { label: "Location", href: "#location" },
     { label: "FAQ", href: "#faq" },

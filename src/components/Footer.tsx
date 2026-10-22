@@ -89,6 +89,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#gallery" className="hover:text-blue-400 transition-colors">
+                  Campus Life & Gallery
+                </a>
+              </li>
+              <li>
                 <a href="#reviews" className="hover:text-blue-400 transition-colors">
                   Student Reviews
                 </a>
