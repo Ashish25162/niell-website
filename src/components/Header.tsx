@@ -23,8 +23,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all">
       {/* Top Notification / Urgency Bar */}
-      <div className="bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 text-white text-xs md:text-sm py-2 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-center sm:text-left">
+      <div className="bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 text-white text-xs md:text-sm py-2 px-4 sm:px-6 lg:px-10 xl:px-16">
+        <div className="max-w-[1600px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-center sm:text-left">
           <div className="flex items-center gap-2 font-medium">
             <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span>New Batches Starting Every Monday! Limited to 15 Students/Batch.</span>
@@ -52,7 +52,7 @@ export default function Header() {
       </div>
 
       {/* Main Navbar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         <div className="flex items-center justify-between h-20">
           {/* Logo & Brand Identity */}
           <Link href="#hero" className="flex items-center gap-3 group">

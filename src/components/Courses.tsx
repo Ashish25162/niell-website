@@ -4,9 +4,9 @@ import { Clock, BookOpen, CheckCircle, MessageCircle, Sparkles, ArrowRight } fro
 export default function Courses() {
   return (
     <section id="courses" className="py-20 bg-slate-50 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-3">
+        <div className="text-center max-w-4xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider">
             <BookOpen className="w-3.5 h-3.5" />
             Curriculum & Programs
@@ -22,7 +22,7 @@ export default function Courses() {
         </div>
 
         {/* Courses Grid */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-10">
           {COURSES.map((course) => (
             <div
               key={course.id}

@@ -4,9 +4,9 @@ import { Star, Quote, Award } from "lucide-react";
 export default function Testimonials() {
   return (
     <section id="reviews" className="py-20 bg-slate-50 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-3">
+        <div className="text-center max-w-4xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider">
             <Award className="w-3.5 h-3.5 text-amber-600" />
             Real Success Stories
@@ -20,7 +20,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {TESTIMONIALS.map((item, idx) => (
             <div
               key={idx}

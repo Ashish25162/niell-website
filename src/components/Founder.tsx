@@ -5,22 +5,22 @@ import { MessageCircle, Phone, Award, CheckCircle2, GraduationCap, Quote } from 
 export default function Founder() {
   return (
     <section id="founder" className="py-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-navy-900 via-blue-950 to-indigo-950 rounded-3xl text-white p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
+      <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
+        <div className="bg-gradient-to-br from-navy-900 via-blue-950 to-indigo-950 rounded-3xl text-white p-8 sm:p-12 lg:p-16 xl:p-20 shadow-2xl relative overflow-hidden">
           {/* Subtle background glow */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-14 items-center">
             {/* Left: Founder Avatar / Graphic Badge */}
             <div className="lg:col-span-5 flex flex-col items-center text-center">
               <div className="relative group">
-                <div className="w-56 h-72 sm:w-64 sm:h-80 rounded-3xl bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-500 p-1.5 shadow-2xl">
+                <div className="w-56 h-72 sm:w-64 sm:h-80 xl:w-72 xl:h-96 rounded-3xl bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-500 p-1.5 shadow-2xl">
                   <div className="w-full h-full bg-slate-900 rounded-[22px] relative overflow-hidden flex flex-col justify-end">
                     <Image
                       src="/images/ranjan-sir-portrait.jpg"
                       alt="Ranjan Singh - Founder & Master English Trainer at NIELL Indore"
                       fill
-                      sizes="(max-width: 640px) 250px, 300px"
+                      sizes="(max-width: 640px) 250px, (max-width: 1280px) 300px, 350px"
                       className="object-cover object-top"
                       priority
                     />

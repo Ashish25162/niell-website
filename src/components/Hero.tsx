@@ -8,8 +8,8 @@ export default function Hero() {
       {/* Decorative background grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e40af0a_1px,transparent_1px),linear-gradient(to_bottom,#1e40af0a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="relative max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-center">
           {/* Left Column: Core Value Proposition & Headings */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             {/* Top Badges */}
@@ -38,7 +38,7 @@ export default function Hero() {
             </h1>
 
             {/* Subheading */}
-            <p className="text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed max-w-3xl mx-auto lg:mx-0">
               Transform your hesitation into fluent communication. Join{" "}
               <strong className="text-slate-900 font-bold">NIELL Spoken English Classes</strong> in{" "}
               <span className="text-blue-800 font-semibold underline decoration-blue-300 decoration-2">

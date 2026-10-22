@@ -48,8 +48,8 @@ export default function DemoForm() {
       {/* Decorative gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-indigo-900/40 to-slate-900/80 pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="relative max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-16 items-center">
           {/* Left: Persuasive text & benefits */}
           <div className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/30 text-xs font-bold uppercase tracking-wider">

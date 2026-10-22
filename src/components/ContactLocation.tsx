@@ -5,9 +5,9 @@ import { MapPin, Phone, MessageCircle, Clock, Building, Navigation, ShieldCheck 
 export default function ContactLocation() {
   return (
     <section id="location" className="py-20 bg-white relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-3">
+        <div className="text-center max-w-4xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider">
             <MapPin className="w-3.5 h-3.5" />
             Find Our Institute
@@ -21,7 +21,7 @@ export default function ContactLocation() {
         </div>
 
         {/* Addresses & Map Grid */}
-        <div className="mt-14 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <div className="mt-14 grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-stretch">
           {/* Left Column: Campus Details & Direct Connect */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
             {/* Primary Campus Card */}

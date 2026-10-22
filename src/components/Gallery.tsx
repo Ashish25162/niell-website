@@ -132,9 +132,9 @@ export default function Gallery() {
 
   return (
     <section id="gallery" className="py-20 bg-slate-50 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-3">
+        <div className="text-center max-w-4xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider">
             <Camera className="w-3.5 h-3.5 text-blue-700" />
             Campus & Classroom Tour
@@ -165,7 +165,7 @@ export default function Gallery() {
         </div>
 
         {/* Photo Grid */}
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredItems.map((item) => (
             <div
               key={item.id}
@@ -235,7 +235,7 @@ export default function Gallery() {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="relative max-w-4xl w-full bg-slate-950 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl"
+            className="relative max-w-5xl w-full bg-slate-950 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl"
           >
             <div className="relative h-[65vh] w-full">
               <Image
