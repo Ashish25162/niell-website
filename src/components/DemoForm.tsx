@@ -31,8 +31,6 @@ export default function DemoForm() {
       `⏰ *Preferred Timing:* ${formData.batchTime}`,
       `🏫 *Learning Mode:* ${formData.mode}`,
       formData.message ? `💬 *Note / Question:* ${formData.message}` : `💬 *Request:* I want to attend a Free Demo Session.`,
-      `----------------------------------------`,
-      `📍 *Preferred Campus:* Behind Radisson Hotel, Vijay Nagar, Indore`,
     ];
 
     const message = textLines.join("\n");
@@ -277,21 +275,29 @@ export default function DemoForm() {
 
                   {/* Campus Mode */}
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
-                      Training Mode
-                    </label>
+                    <div className="flex items-center justify-between mb-1">
+                      <label className="block text-xs font-bold uppercase tracking-wider text-slate-700">
+                        Training Mode
+                      </label>
+                      <span className="text-[10px] font-bold text-blue-800 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded-full">
+                        Online Batch Coming Soon
+                      </span>
+                    </div>
                     <select
                       value={formData.mode}
                       onChange={(e) => setFormData({ ...formData, mode: e.target.value })}
-                      className="w-full px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-xs sm:text-sm bg-slate-50"
+                      className="w-full px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-xs sm:text-sm bg-slate-50 font-medium"
                     >
-                      <option value="Offline Classroom (Vijay Nagar, Indore)">
+                      <option value="Offline Classroom (Vijay Nagar Campus)">
                         Offline Classroom (Vijay Nagar Campus)
                       </option>
-                      <option value="Online Live Interactive Batch">
-                        Online Live Interactive Batch
+                      <option value="Online Live Interactive Batch (Coming Soon)" disabled>
+                        Online Live Interactive Batch (Coming Soon)
                       </option>
                     </select>
+                    <p className="text-[11px] text-slate-500 mt-1">
+                      Currently admissions are open for offline classroom batches at Vijay Nagar campus.
+                    </p>
                   </div>
 
                   {/* Optional Note */}
