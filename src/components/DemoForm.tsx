@@ -193,9 +193,13 @@ export default function DemoForm() {
                         autoComplete="tel"
                         required
                         pattern="[0-9]{10}"
+                        title="Please enter your 10-digit mobile number"
                         placeholder="10-digit mobile number"
                         value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        onChange={(e) => {
+                          const val = e.target.value.replace(/[^0-9]/g, "").slice(0, 10);
+                          setFormData({ ...formData, phone: val });
+                        }}
                         className="w-full pl-14 pr-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-base sm:text-sm bg-slate-50"
                       />
                     </div>
