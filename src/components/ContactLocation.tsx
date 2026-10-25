@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { INSTITUTE_INFO } from "@/lib/constants";
-import { MapPin, Phone, MessageCircle, Clock, Building, Navigation, ShieldCheck } from "lucide-react";
+import { MapPin, Phone, MessageCircle, Clock, Building, Navigation, ShieldCheck, Mail } from "lucide-react";
 
 export default function ContactLocation() {
   return (
@@ -135,6 +135,26 @@ export default function ContactLocation() {
                   className="px-3.5 py-1.5 rounded-lg text-xs font-bold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200"
                 >
                   Call Now
+                </a>
+              </div>
+
+              <div className="flex items-center justify-between border-t border-slate-100 pt-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center">
+                    <Mail className="w-5 h-5 text-amber-700" />
+                  </div>
+                  <div>
+                    <div className="text-xs text-slate-500 font-medium">Official Email</div>
+                    <div className="text-sm font-bold text-slate-900">
+                      {INSTITUTE_INFO.email}
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href={`mailto:${INSTITUTE_INFO.email}`}
+                  className="px-3.5 py-1.5 rounded-lg text-xs font-bold text-amber-800 bg-amber-50 hover:bg-amber-100 border border-amber-200"
+                >
+                  Email Us
                 </a>
               </div>
 

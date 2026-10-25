@@ -9,7 +9,7 @@ export const INSTITUTE_INFO = {
   phone: "6266394121",
   whatsappNumber: "916266394121",
   formattedPhone: "+91 6266394121",
-  email: "", // Kept empty as requested, ready for future update
+  email: "worldniell@gmail.com",
   primaryAddress: {
     title: "Main Campus (Vijay Nagar)",
     line1: "Behind Radisson Hotel, near H.P. Petrol Pump",

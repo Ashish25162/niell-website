@@ -55,10 +55,14 @@ export default function Footer() {
                 <span>WhatsApp: {INSTITUTE_INFO.formattedPhone}</span>
               </a>
 
-              <div className="inline-flex items-center gap-2 text-slate-400">
+              <a
+                href={`mailto:${INSTITUTE_INFO.email}`}
+                className="inline-flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
+                title="Send official inquiry email to NIELL"
+              >
                 <Mail className="w-4 h-4 text-amber-400" />
-                <span>Email: <span className="italic text-slate-500">(To be updated)</span></span>
-              </div>
+                <span>Email: {INSTITUTE_INFO.email}</span>
+              </a>
             </div>
           </div>
 

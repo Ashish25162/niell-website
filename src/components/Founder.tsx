@@ -14,13 +14,13 @@ export default function Founder() {
             {/* Left: Founder Avatar / Graphic Badge */}
             <div className="lg:col-span-5 flex flex-col items-center text-center">
               <div className="relative group">
-                <div className="w-56 h-72 sm:w-64 sm:h-80 xl:w-72 xl:h-96 rounded-3xl bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-500 p-1.5 shadow-2xl">
+                <div className="w-64 h-88 sm:w-72 sm:h-[420px] xl:w-80 xl:h-[480px] rounded-3xl bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-500 p-1.5 shadow-2xl">
                   <div className="w-full h-full bg-slate-900 rounded-[22px] relative overflow-hidden flex flex-col justify-end">
                     <Image
-                      src="/images/ranjan-sir-portrait.jpg"
+                      src="/images/ranjan-sir-founder.jpg"
                       alt="Ranjan Singh - Founder & Master English Trainer at NIELL Indore"
                       fill
-                      sizes="(max-width: 640px) 250px, (max-width: 1280px) 300px, 350px"
+                      sizes="(max-width: 640px) 280px, (max-width: 1280px) 320px, 360px"
                       className="object-cover object-top"
                       priority
                     />

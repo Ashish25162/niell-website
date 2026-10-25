@@ -96,6 +96,7 @@ export default function RootLayout({
           "Premier English speaking and communication training institute in Indore founded by Ranjan Singh.",
         "url": "https://niell.in",
         "telephone": "+91-6266394121",
+        "email": "worldniell@gmail.com",
         "priceRange": "₹₹",
         "founder": {
           "@type": "Person",
