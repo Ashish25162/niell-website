@@ -4,6 +4,8 @@ export const INSTITUTE_INFO = {
   tagline: "Join and Feel the Changes",
   founder: "Ranjan Singh",
   founderTitle: "Founder & Master English Trainer",
+  domain: "niell.in",
+  website: "https://niell.in",
   phone: "6266394121",
   whatsappNumber: "916266394121",
   formattedPhone: "+91 6266394121",

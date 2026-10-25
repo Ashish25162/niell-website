@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://niellenglish.com/sitemap.xml",
+    sitemap: "https://niell.in/sitemap.xml",
   };
 }

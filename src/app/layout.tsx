@@ -10,7 +10,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://niellenglish.com"),
+  metadataBase: new URL("https://niell.in"),
   title: "NIELL Spoken English Classes | Join and Feel the Changes | Best English Coaching in Indore | By Ranjan Singh",
   description:
     "Join and Feel the Changes with NIELL Spoken English Classes in Vijay Nagar, Indore (Behind Radisson Hotel). Mentored by Ranjan Singh. Master spoken English fluency, hesitation removal, grammar, public speaking & interview preparation. Book a free demo class today!",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "Spoken English for Hindi medium students Indore",
     "IELTS speaking coaching Indore",
   ],
-  authors: [{ name: "Ranjan Singh", url: "https://niellenglish.com" }],
+  authors: [{ name: "Ranjan Singh", url: "https://niell.in" }],
   creator: "Ranjan Singh",
   publisher: "NIELL Spoken English Classes",
   alternates: {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "NIELL Spoken English Classes Indore | Mentored by Ranjan Singh",
     description:
       "Speak fluent English with complete confidence in 60 days. Small batches, daily stage practice, and interview prep in Vijay Nagar, Indore. Call +91 6266394121.",
-    url: "https://niellenglish.com",
+    url: "https://niell.in",
     siteName: "NIELL Spoken English Classes",
     locale: "en_IN",
     type: "website",
@@ -86,15 +86,15 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": ["EducationalOrganization", "LocalBusiness"],
-        "@id": "https://niellenglish.com/#organization",
+        "@id": "https://niell.in/#organization",
         "name": "NIELL Spoken English Classes",
         "alternateName": "NIELL English Classes Indore",
         "slogan": "Join and Feel the Changes",
-        "logo": "https://niellenglish.com/logo.png",
-        "image": "https://niellenglish.com/logo.png",
+        "logo": "https://niell.in/logo.png",
+        "image": "https://niell.in/logo.png",
         "description":
           "Premier English speaking and communication training institute in Indore founded by Ranjan Singh.",
-        "url": "https://niellenglish.com",
+        "url": "https://niell.in",
         "telephone": "+91-6266394121",
         "priceRange": "₹₹",
         "founder": {
@@ -138,7 +138,7 @@ export default function RootLayout({
       },
       {
         "@type": "FAQPage",
-        "@id": "https://niellenglish.com/#faq",
+        "@id": "https://niell.in/#faq",
         "mainEntity": FAQS.map((faq) => ({
           "@type": "Question",
           "name": faq.question,
