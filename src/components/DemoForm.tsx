@@ -10,7 +10,7 @@ export default function DemoForm() {
     phone: "",
     email: "", // User specified: keep email empty/ready for later update
     course: COURSES[0].title,
-    batchTime: "Morning (8:00 AM - 10:00 AM)",
+    batchTime: "Morning: 9:00 AM – 10:30 AM",
     mode: "Offline Classroom (Vijay Nagar Campus)",
     message: "",
   });
@@ -257,14 +257,20 @@ export default function DemoForm() {
                       <select
                         value={formData.batchTime}
                         onChange={(e) => setFormData({ ...formData, batchTime: e.target.value })}
-                        className="w-full px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-xs sm:text-sm bg-slate-50"
+                        className="w-full px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-xs sm:text-sm bg-slate-50 font-medium"
                       >
-                        <option value="Early Morning (7:00 AM - 8:30 AM)">Early Morning (7:00 AM)</option>
-                        <option value="Morning (8:30 AM - 10:00 AM)">Morning (8:30 AM - 10:00 AM)</option>
-                        <option value="Afternoon (12:00 PM - 2:00 PM)">Afternoon (12:00 PM - 2:00 PM)</option>
-                        <option value="Evening (5:00 PM - 6:30 PM)">Evening (5:00 PM - 6:30 PM)</option>
-                        <option value="Late Evening (7:00 PM - 8:30 PM)">Late Evening (7:00 PM - 8:30 PM)</option>
-                        <option value="Weekend Special Batch">Weekend Special Batch</option>
+                        <option value="Morning: 9:00 AM – 10:30 AM">
+                          Morning: 9:00 AM – 10:30 AM
+                        </option>
+                        <option value="Evening: 5:00 PM – 6:30 PM">
+                          Evening: 5:00 PM – 6:30 PM
+                        </option>
+                        <option value="Evening: 6:30 PM – 7:45 PM">
+                          Evening: 6:30 PM – 7:45 PM
+                        </option>
+                        <option value="Evening: 7:30 PM – 9:00 PM">
+                          Evening: 7:30 PM – 9:00 PM
+                        </option>
                       </select>
                     </div>
                   </div>

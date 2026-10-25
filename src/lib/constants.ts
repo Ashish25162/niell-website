@@ -36,7 +36,15 @@ export const INSTITUTE_INFO = {
   socials: {
     whatsapp: "https://wa.me/916266394121",
   },
-  timings: "Monday – Saturday: 7:00 AM – 8:30 PM | Sunday: Special GD Batches",
+  timings: "Morning: 9:00 AM – 10:30 AM | Evening: 5:00 PM – 9:00 PM",
+  batchSchedule: {
+    morning: ["9:00 AM – 10:30 AM"],
+    evening: [
+      "5:00 PM – 6:30 PM",
+      "6:30 PM – 7:45 PM",
+      "7:30 PM – 9:00 PM",
+    ],
+  },
 };
 
 export const FLAGSHIP_COURSE = {
@@ -68,7 +76,15 @@ export const FLAGSHIP_COURSE = {
     "3 Months of intensive classroom training with daily speaking & stage drills.",
     "Additional 3 Months Membership for continued practice and revision at your convenience.*",
   ],
-  batchTimings: "Morning (7:00 AM – 11:30 AM) & Evening (5:00 PM – 8:30 PM) Batches",
+  batchSchedule: {
+    morning: ["9:00 AM – 10:30 AM"],
+    evening: [
+      "5:00 PM – 6:30 PM",
+      "6:30 PM – 7:45 PM",
+      "7:30 PM – 9:00 PM",
+    ],
+  },
+  batchTimings: "Morning: 9:00 AM – 10:30 AM | Evening: 5:00 PM – 6:30 PM, 6:30 PM – 7:45 PM, 7:30 PM – 9:00 PM",
 };
 
 export const COURSES = [FLAGSHIP_COURSE];
@@ -127,7 +143,7 @@ export const FAQS = [
   {
     question: "What are the batch timings at NIELL?",
     answer:
-      "We run batches throughout the day from 7:00 AM to 8:30 PM. We have dedicated morning batches for college students, afternoon batches for homemakers, and evening/weekend batches for working professionals.",
+      "We offer flexible morning and evening batch timings to suit college students, job seekers, and working professionals: Morning Batch: 9:00 AM – 10:30 AM. Evening Batches: 5:00 PM – 6:30 PM, 6:30 PM – 7:45 PM, and 7:30 PM – 9:00 PM. Weekend practice sessions are also available.",
   },
   {
     question: "How long does it take to become fluent in English?",

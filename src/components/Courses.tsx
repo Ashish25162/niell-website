@@ -95,18 +95,68 @@ export default function Courses() {
                 </div>
 
                 {/* Batch Timings Card */}
-                <div className="bg-blue-50/80 rounded-2xl p-4 sm:p-5 border border-blue-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                  <div>
-                    <span className="text-xs font-extrabold uppercase tracking-wider text-blue-900 block mb-0.5">
-                      🗓️ Available Batch Timings
+                <div className="bg-gradient-to-br from-blue-50/90 to-indigo-50/60 rounded-3xl p-5 sm:p-6 border-2 border-blue-200 shadow-sm space-y-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div className="flex items-center gap-2">
+                      <span className="text-xl">🗓️</span>
+                      <div>
+                        <span className="text-xs font-extrabold uppercase tracking-wider text-blue-900 block">
+                          Official Batch Timings
+                        </span>
+                        <p className="text-xs text-slate-600">
+                          Choose the batch that fits your college, job, or business schedule
+                        </p>
+                      </div>
+                    </div>
+                    <span className="inline-flex items-center text-xs font-bold text-blue-800 bg-white px-3 py-1 rounded-xl border border-blue-200 shadow-sm whitespace-nowrap self-start sm:self-auto">
+                      Small Batches (Max 15)
                     </span>
-                    <p className="text-xs sm:text-sm text-slate-700 font-medium">
-                      {course.batchTimings}
-                    </p>
                   </div>
-                  <span className="inline-flex items-center text-xs font-bold text-blue-800 bg-white px-3 py-1.5 rounded-xl border border-blue-200 shadow-sm whitespace-nowrap self-start sm:self-auto">
-                    Small Batches (Max 15)
-                  </span>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                    {/* Morning Slot */}
+                    <div className="bg-white rounded-2xl p-4 border border-blue-100 shadow-xs space-y-2 flex flex-col justify-between">
+                      <div>
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-[11px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-200">
+                            Morning Batch
+                          </span>
+                          <span className="text-[11px] text-slate-500 font-medium">1.5 hrs/day</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-sm font-extrabold text-slate-900 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                          <span>🕘</span>
+                          <span>9:00 AM – 10:30 AM</span>
+                        </div>
+                      </div>
+                      <p className="text-[11px] text-slate-500 pt-1">
+                        Ideal for college students & morning learners.
+                      </p>
+                    </div>
+
+                    {/* Evening Slots */}
+                    <div className="bg-white rounded-2xl p-4 border border-blue-100 shadow-xs space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="text-[11px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-900 border border-blue-200">
+                          Evening Batches
+                        </span>
+                        <span className="text-[11px] text-slate-500 font-medium">3 Flexible Slots</span>
+                      </div>
+                      <div className="space-y-1.5">
+                        <div className="flex items-center gap-2 text-xs font-bold text-slate-900 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                          <span>🕔</span>
+                          <span>5:00 PM – 6:30 PM</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-xs font-bold text-slate-900 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                          <span>🕡</span>
+                          <span>6:30 PM – 7:45 PM</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-xs font-bold text-slate-900 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                          <span>🕢</span>
+                          <span>7:30 PM – 9:00 PM</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 

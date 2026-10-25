@@ -215,7 +215,7 @@ export default function Gallery() {
               Want to visit our classroom in person?
             </h4>
             <p className="text-xs sm:text-sm text-slate-300">
-              Walk in anytime between 7:00 AM – 8:30 PM Behind Radisson Hotel, Vijay Nagar, Indore.
+              Visit during batch hours: Morning (9:00 AM – 10:30 AM) or Evening (5:00 PM – 9:00 PM) Behind Radisson Hotel, Vijay Nagar, Indore.
             </p>
           </div>
           <a

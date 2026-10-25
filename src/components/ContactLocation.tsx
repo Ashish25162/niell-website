@@ -160,7 +160,7 @@ export default function ContactLocation() {
 
               <div className="flex items-center gap-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
                 <Clock className="w-4 h-4 text-blue-600 flex-shrink-0" />
-                <span>Open Mon–Sat: 7:00 AM – 8:30 PM (Sun: Special Sessions)</span>
+                <span>Batches: Morning (9:00 AM – 10:30 AM) & Evening (5:00 PM – 9:00 PM)</span>
               </div>
             </div>
           </div>
