@@ -1,114 +1,221 @@
-import { COURSES, INSTITUTE_INFO } from "@/lib/constants";
-import { Clock, BookOpen, CheckCircle, MessageCircle, Sparkles, ArrowRight } from "lucide-react";
+import { FLAGSHIP_COURSE, INSTITUTE_INFO } from "@/lib/constants";
+import { Clock, BookOpen, CheckCircle2, MessageCircle, Sparkles, ArrowRight, ShieldCheck, Award, Phone } from "lucide-react";
 
 export default function Courses() {
+  const course = FLAGSHIP_COURSE;
+
   return (
     <section id="courses" className="py-20 bg-slate-50 relative">
       <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider">
-            <BookOpen className="w-3.5 h-3.5" />
-            Curriculum & Programs
+            <BookOpen className="w-3.5 h-3.5 text-blue-700" />
+            All-In-One Flagship Curriculum
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Our Spoken English Courses in Indore
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+            Our Spoken English Course in Indore
           </h2>
           <p className="text-base sm:text-lg text-slate-600">
-            Carefully structured modules crafted by{" "}
-            <span className="font-semibold text-slate-900">Ranjan Singh</span> to take you from
-            hesitant beginner to articulate speaker.
+            At NIELL, we offer <strong className="text-slate-900">one complete, all-inclusive flagship program</strong> personally mentored by{" "}
+            <span className="font-semibold text-slate-900">Ranjan Singh</span>. No confusing tiers—everything you need for lifelong English fluency and stage confidence is included.
           </p>
         </div>
 
-        {/* Courses Grid */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-10">
-          {COURSES.map((course) => (
-            <div
-              key={course.id}
-              className="bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all p-6 sm:p-8 flex flex-col justify-between relative group hover:border-blue-400"
-            >
-              <div>
-                {/* Course Top Meta */}
-                <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
-                  <span
-                    className={`text-xs font-bold px-3 py-1 rounded-full border ${course.badgeColor}`}
-                  >
-                    {course.tag}
+        {/* Master Flagship Showcase Card */}
+        <div className="mt-14 bg-white rounded-3xl border border-slate-200/90 shadow-xl overflow-hidden">
+          {/* Card Top Header Banner */}
+          <div className="bg-gradient-to-r from-navy-900 via-blue-950 to-indigo-950 text-white p-6 sm:p-8 lg:p-10">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+              <div className="space-y-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="inline-flex items-center gap-1 text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full bg-amber-400 text-slate-950 shadow-sm">
+                    <Award className="w-3.5 h-3.5" />
+                    Indore&apos;s #1 All-Inclusive Program
                   </span>
-                  <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md">
-                    <Clock className="w-3.5 h-3.5 text-blue-600" />
-                    <span>Duration: {course.duration}</span>
-                  </div>
+                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-white/10 text-slate-200 border border-white/15">
+                    {course.level}
+                  </span>
                 </div>
-
-                {/* Course Title & Level */}
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
                   {course.title}
                 </h3>
-                <p className="text-xs font-semibold text-blue-700 mt-0.5 mb-3">
-                  Target Level: {course.level}
-                </p>
-
-                {/* Description */}
-                <p className="text-sm text-slate-600 leading-relaxed mb-6">
+                <p className="text-sm sm:text-base text-slate-300 max-w-3xl leading-relaxed">
                   {course.description}
                 </p>
+              </div>
 
-                {/* Highlights List */}
-                <div className="space-y-2.5 mb-6">
-                  <p className="text-xs font-bold uppercase tracking-wider text-slate-900">
-                    What You Will Master:
+              {/* Course Duration Header Pill */}
+              <div className="flex-shrink-0 bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/15 text-left lg:text-right">
+                <div className="flex items-center gap-2 text-amber-300 text-xs font-bold uppercase tracking-wider justify-start lg:justify-end mb-1">
+                  <Clock className="w-4 h-4" />
+                  <span>Total Duration</span>
+                </div>
+                <div className="text-xl sm:text-2xl font-black text-white">
+                  3 Months + 3 Months
+                </div>
+                <p className="text-xs text-slate-300 mt-0.5">
+                  Classroom Training + Practice Membership
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card Body: Programs List & Duration Details */}
+          <div className="p-6 sm:p-8 lg:p-10 xl:p-12">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-14 items-start">
+              
+              {/* Left Column: 📚 Our Programs (13 Modules) */}
+              <div className="lg:col-span-7 space-y-6">
+                <div>
+                  <div className="inline-flex items-center gap-2 text-base sm:text-lg font-extrabold text-slate-900 mb-1">
+                    <span>📚</span>
+                    <span>Our Programs</span>
+                  </div>
+                  <p className="text-xs sm:text-sm text-slate-600">
+                    Every student masters all 13 modules through active daily speaking, live GDs, and stage practice:
                   </p>
-                  {course.highlights.map((highlight, idx) => (
-                    <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
-                      <CheckCircle className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
-                      <span>{highlight}</span>
+                </div>
+
+                {/* 13 Program Modules Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
+                  {course.programs.map((prog, idx) => (
+                    <div
+                      key={idx}
+                      className="flex items-center gap-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:bg-blue-50/60 hover:border-blue-300 transition-all group"
+                    >
+                      <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                      </div>
+                      <span className="text-sm font-bold text-slate-800 group-hover:text-blue-900 transition-colors">
+                        {prog}
+                      </span>
                     </div>
                   ))}
                 </div>
 
-                {/* Batch Timings */}
-                <div className="bg-slate-50 rounded-xl p-3 border border-slate-100 mb-6 text-xs text-slate-700">
-                  <span className="font-bold text-slate-900 block mb-0.5">🗓️ Available Batches:</span>
-                  <span>{course.batchTimings}</span>
+                {/* Batch Timings Card */}
+                <div className="bg-blue-50/80 rounded-2xl p-4 sm:p-5 border border-blue-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                  <div>
+                    <span className="text-xs font-extrabold uppercase tracking-wider text-blue-900 block mb-0.5">
+                      🗓️ Available Batch Timings
+                    </span>
+                    <p className="text-xs sm:text-sm text-slate-700 font-medium">
+                      {course.batchTimings}
+                    </p>
+                  </div>
+                  <span className="inline-flex items-center text-xs font-bold text-blue-800 bg-white px-3 py-1.5 rounded-xl border border-blue-200 shadow-sm whitespace-nowrap self-start sm:self-auto">
+                    Small Batches (Max 15)
+                  </span>
                 </div>
               </div>
 
-              {/* Action Buttons */}
-              <div className="pt-4 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <a
-                  href={`https://wa.me/${INSTITUTE_INFO.whatsappNumber}?text=${encodeURIComponent(
-                    `Hi Ranjan Sir, I want details regarding the "${course.title}" batch at NIELL Indore.`
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-colors"
-                >
-                  <MessageCircle className="w-4 h-4 fill-emerald-600 text-emerald-600" />
-                  <span>Ask on WhatsApp</span>
-                </a>
+              {/* Right Column: ⏳ Course Duration & Booking CTA */}
+              <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
+                
+                {/* ⏳ Course Duration Structure Box */}
+                <div className="bg-gradient-to-br from-amber-50 via-orange-50/60 to-yellow-50/40 rounded-3xl p-6 sm:p-7 border-2 border-amber-300 shadow-md space-y-4">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl">⏳</span>
+                    <div>
+                      <h4 className="text-lg font-extrabold text-amber-950">
+                        Course Duration Structure
+                      </h4>
+                      <p className="text-xs text-amber-900/80">
+                        A unique 2-stage methodology ensuring lasting fluency
+                      </p>
+                    </div>
+                  </div>
 
-                <a
-                  href="#book-demo"
-                  className="flex items-center justify-center gap-1.5 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold text-white bg-blue-700 hover:bg-blue-800 shadow transition-colors"
-                >
-                  <Sparkles className="w-4 h-4 text-amber-300" />
-                  <span>Book Demo Class</span>
-                </a>
+                  <div className="space-y-4 pt-1">
+                    {/* Stage 1 */}
+                    <div className="bg-white rounded-2xl p-4 border border-amber-200 shadow-sm space-y-1">
+                      <div className="flex items-center gap-2">
+                        <span className="w-6 h-6 rounded-full bg-amber-500 text-white font-black text-xs flex items-center justify-center flex-shrink-0">
+                          1
+                        </span>
+                        <h5 className="font-extrabold text-sm text-slate-900">
+                          3 Months of Intensive Classroom Training
+                        </h5>
+                      </div>
+                      <p className="text-xs text-slate-600 pl-8 leading-relaxed">
+                        Daily spoken English drills, stage extempore, group discussions, grammar foundation, and 1-on-1 correction by Ranjan Sir.
+                      </p>
+                    </div>
+
+                    {/* Stage 2 */}
+                    <div className="bg-white rounded-2xl p-4 border border-amber-200 shadow-sm space-y-1">
+                      <div className="flex items-center gap-2">
+                        <span className="w-6 h-6 rounded-full bg-blue-600 text-white font-black text-xs flex items-center justify-center flex-shrink-0">
+                          2
+                        </span>
+                        <h5 className="font-extrabold text-sm text-slate-900">
+                          Additional 3 Months Membership
+                        </h5>
+                      </div>
+                      <p className="text-xs text-slate-600 pl-8 leading-relaxed">
+                        Continued practice and revision at your convenience.* Attend practice batches anytime you need to refresh your skills.
+                      </p>
+                    </div>
+                  </div>
+
+                  <p className="text-[11px] text-amber-900/70 italic pt-1 border-t border-amber-200">
+                    *Additional 3 Months Membership allows students flexible revision and conversational maintenance so you never lose your fluency edge.
+                  </p>
+                </div>
+
+                {/* Direct Enrollment & Demo Actions */}
+                <div className="bg-slate-900 rounded-3xl p-6 sm:p-7 text-white shadow-xl space-y-4">
+                  <div>
+                    <span className="inline-flex items-center gap-1 text-[11px] font-extrabold uppercase tracking-wider text-amber-400 mb-1">
+                      <Sparkles className="w-3.5 h-3.5" />
+                      Zero-Risk Attendance
+                    </span>
+                    <h4 className="text-lg sm:text-xl font-bold text-white">
+                      Attend a Free Demo Class First
+                    </h4>
+                    <p className="text-xs text-slate-300 mt-1">
+                      Experience Ranjan Sir&apos;s practical teaching methodology live in our Vijay Nagar classroom before enrolling.
+                    </p>
+                  </div>
+
+                  <div className="space-y-2.5 pt-1">
+                    <a
+                      href="#book-demo"
+                      className="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 shadow-lg transition-all"
+                    >
+                      <Sparkles className="w-4 h-4 text-slate-950" />
+                      <span>Book Free Demo Class</span>
+                    </a>
+
+                    <a
+                      href={`https://wa.me/${INSTITUTE_INFO.whatsappNumber}?text=${encodeURIComponent(
+                        "Hi Ranjan Sir, I want details regarding the Complete Spoken English Course (3M Training + 3M Membership) at NIELL Indore."
+                      )}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold text-emerald-300 bg-emerald-950/60 hover:bg-emerald-900/80 border border-emerald-500/40 transition-colors"
+                    >
+                      <MessageCircle className="w-4 h-4 fill-emerald-400 text-emerald-400" />
+                      <span>Inquire on WhatsApp</span>
+                    </a>
+                  </div>
+                </div>
+
               </div>
+
             </div>
-          ))}
+          </div>
         </div>
 
-        {/* Custom Corporate & School Batches Banner */}
+        {/* Corporate & Customized Training Banner */}
         <div className="mt-12 bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-3xl p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-2 text-center md:text-left">
             <h3 className="text-xl sm:text-2xl font-bold">
               Looking for Corporate Training or Customized 1-on-1 Mentorship?
             </h3>
             <p className="text-sm text-slate-300 max-w-2xl">
-              We offer specialized communication workshops for corporate teams, colleges, and customized 1-on-1 executive coaching in Indore.
+              We offer specialized communication workshops for corporate teams, college placement batches, and customized 1-on-1 executive coaching in Indore.
             </p>
           </div>
           <a

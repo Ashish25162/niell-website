@@ -225,18 +225,28 @@ export default function DemoForm() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
-                        Select Course
+                        Program & Focus Area
                       </label>
                       <select
                         value={formData.course}
                         onChange={(e) => setFormData({ ...formData, course: e.target.value })}
                         className="w-full px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-xs sm:text-sm bg-slate-50"
                       >
-                        {COURSES.map((c) => (
-                          <option key={c.id} value={c.title}>
-                            {c.title}
-                          </option>
-                        ))}
+                        <option value={COURSES[0].title}>
+                          {COURSES[0].title}
+                        </option>
+                        <option value="Complete Course - Focus on General Spoken English & Grammar">
+                          Focus: General Spoken English & Grammar
+                        </option>
+                        <option value="Complete Course - Focus on Public Speaking & Stage Confidence">
+                          Focus: Public Speaking & Stage Confidence
+                        </option>
+                        <option value="Complete Course - Focus on Interview Training & Corporate GDs">
+                          Focus: Interview Training & Corporate GDs
+                        </option>
+                        <option value="Complete Course - Focus on Personality & Leadership">
+                          Focus: Personality Development & Leadership
+                        </option>
                       </select>
                     </div>
 

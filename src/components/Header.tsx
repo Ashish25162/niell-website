@@ -11,7 +11,7 @@ export default function Header() {
 
   const navLinks = [
     { label: "Home", href: "#hero" },
-    { label: "Courses", href: "#courses" },
+    { label: "Our Course", href: "#courses" },
     { label: "Why NIELL", href: "#why-us" },
     { label: "Meet Founder", href: "#founder" },
     { label: "Campus Life", href: "#gallery" },

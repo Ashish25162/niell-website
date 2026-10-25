@@ -120,21 +120,34 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3: Courses List */}
+          {/* Col 3: Programs & Modules List */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="text-sm font-bold uppercase tracking-wider text-white">
-              Programs
+              Course & Modules
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm">
-              {COURSES.map((course) => (
-                <li key={course.id}>
-                  <a href="#courses" className="hover:text-blue-400 transition-colors">
-                    {course.title}
-                  </a>
-                </li>
-              ))}
-              <li className="pt-2 text-slate-500 text-xs">
-                Batches: Morning (7 AM - 11 AM) & Evening (5 PM - 8:30 PM)
+              <li>
+                <a href="#courses" className="font-bold text-amber-300 hover:text-amber-200 transition-colors">
+                  {COURSES[0].title}
+                </a>
+              </li>
+              <li className="text-slate-400">
+                • General Spoken English & Grammar
+              </li>
+              <li className="text-slate-400">
+                • Public Speaking & Stage Presence
+              </li>
+              <li className="text-slate-400">
+                • Group Discussions & Extempore
+              </li>
+              <li className="text-slate-400">
+                • Personality Development & Leadership
+              </li>
+              <li className="text-slate-400">
+                • Interview Training & Resume Writing
+              </li>
+              <li className="pt-2 text-emerald-400 font-semibold text-xs">
+                ⏳ Duration: 3M Training + 3M Membership
               </li>
             </ul>
           </div>

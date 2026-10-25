@@ -39,80 +39,39 @@ export const INSTITUTE_INFO = {
   timings: "Monday – Saturday: 7:00 AM – 8:30 PM | Sunday: Special GD Batches",
 };
 
-export const COURSES = [
-  {
-    id: "foundation-english",
-    title: "Basic English & Grammar Foundation",
-    level: "Beginner to Conversational",
-    duration: "60 Days",
-    tag: "Most Popular for Foundation",
-    badgeColor: "bg-blue-100 text-blue-800 border-blue-200",
-    description:
-      "Specially designed for students and beginners hesitant to speak English. Learn correct tense structure, everyday vocabulary, and overcome hesitation step-by-step.",
-    highlights: [
-      "Zero-level hesitation removal",
-      "Essential grammar & sentence formation",
-      "Daily 100+ practical conversation phrases",
-      "1-on-1 speaking practice with Ranjan Sir",
-      "Direct thought-in-English training (stops mental translation)",
-    ],
-    batchTimings: "Morning: 8:00 AM, 9:30 AM | Evening: 5:00 PM, 6:30 PM",
-  },
-  {
-    id: "advanced-fluency",
-    title: "Advanced Spoken English & Fluency",
-    level: "Intermediate to Advanced",
-    duration: "45 Days",
-    tag: "High Conversion",
-    badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200",
-    description:
-      "Accelerate your natural English speaking flow. Remove mother-tongue influence (MTI), master idioms, phrasal verbs, and speak effortlessly in professional environments.",
-    highlights: [
-      "Fluency conditioning & instant thought-in-English",
-      "Daily extempore & debate rounds",
-      "Accent refinement & MTI neutralization",
-      "Advanced business & conversational vocabulary",
-      "Speed speaking drills & audio analysis",
-    ],
-    batchTimings: "Morning: 10:30 AM | Evening: 7:00 PM",
-  },
-  {
-    id: "personality-public-speaking",
-    title: "Personality Development & Public Speaking",
-    level: "All Levels",
-    duration: "30 Days",
-    tag: "Leadership Focus",
-    badgeColor: "bg-purple-100 text-purple-800 border-purple-200",
-    description:
-      "Conquer stage fear and command attention. Learn charismatic body language, confident vocal projection, and presentation mastery under the personal mentorship of Ranjan Singh.",
-    highlights: [
-      "Podium & stage speech simulations",
-      "Body language, eye contact & posture coaching",
-      "Handling Q&A and spontaneous audience remarks",
-      "Overcoming stage fright & social anxiety",
-      "Video-recorded feedback sessions",
-    ],
-    batchTimings: "Flexible Weekend & Evening Batches",
-  },
-  {
-    id: "interview-ielts-prep",
-    title: "Job Interview Mastery & IELTS Prep",
-    level: "Job Seekers & Study Abroad",
-    duration: "30 Days",
-    tag: "Career Accelerator",
-    badgeColor: "bg-amber-100 text-amber-800 border-amber-200",
-    description:
-      "Crack corporate HR interviews, campus placements, and IELTS Speaking tests. Master standard corporate answers, salary negotiation, and resume walking.",
-    highlights: [
-      "Real-world mock interviews with personalized feedback",
-      "HR favorite questions: 'Tell me about yourself', 'Weaknesses', etc.",
-      "IELTS Band 7+ Speaking cues and vocabulary",
-      "Professional email drafting & telephone etiquette",
-      "Group Discussion (GD) cracking techniques",
-    ],
-    batchTimings: "Morning: 11:30 AM | Evening: 8:00 PM",
-  },
-];
+export const FLAGSHIP_COURSE = {
+  id: "complete-spoken-english-program",
+  title: "Complete Spoken English & Personality Development Mastery",
+  shortTitle: "Complete Spoken English Program",
+  level: "All Levels (English & Hindi Medium Friendly)",
+  duration: "3 Months Training + 3 Months Membership",
+  tag: "Flagship All-in-One Course",
+  badgeColor: "bg-blue-100 text-blue-800 border-blue-200",
+  description:
+    "NIELL offers Indore's premier all-in-one comprehensive program crafted and mentored by Ranjan Singh. Covering all 13 essential dimensions from foundational fluency and grammar to stage presence, GDs, and corporate interview readiness.",
+  programs: [
+    "General Spoken English",
+    "Public Speaking",
+    "Group Discussions",
+    "Personality Development",
+    "Interview Training & Techniques",
+    "Presentation Skills",
+    "Resume Writing",
+    "Email Etiquette",
+    "Leadership Skills",
+    "Confidence Building Activities",
+    "Telephonic Conversation Techniques",
+    "Advanced Vocabulary",
+    "Advanced Grammar",
+  ],
+  durationDetails: [
+    "3 Months of intensive classroom training with daily speaking & stage drills.",
+    "Additional 3 Months Membership for continued practice and revision at your convenience.*",
+  ],
+  batchTimings: "Morning (7:00 AM – 11:30 AM) & Evening (5:00 PM – 8:30 PM) Batches",
+};
+
+export const COURSES = [FLAGSHIP_COURSE];
 
 export const TESTIMONIALS = [
   {
