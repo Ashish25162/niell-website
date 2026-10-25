@@ -56,7 +56,7 @@ export default function Footer() {
               </a>
 
               <a
-                href={`mailto:${INSTITUTE_INFO.email}`}
+                href={INSTITUTE_INFO.emailMailto}
                 className="inline-flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
                 title="Send official inquiry email to NIELL"
               >

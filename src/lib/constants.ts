@@ -10,6 +10,11 @@ export const INSTITUTE_INFO = {
   whatsappNumber: "916266394121",
   formattedPhone: "+91 6266394121",
   email: "worldniell@gmail.com",
+  emailMailto: `mailto:worldniell@gmail.com?subject=${encodeURIComponent(
+    "Demo Class & Course Inquiry - NIELL Indore"
+  )}&body=${encodeURIComponent(
+    `Dear Ranjan Sir & NIELL Team,\n\nI want to attend a Free Demo Class / inquire about joining NIELL Spoken English Classes in Indore. Here are my details:\n\n• Full Name: \n• WhatsApp Number: \n• Email Address: \n• Preferred Timing:\n  (Options: Morning 9:00 AM – 10:30 AM | Evening 5:00 PM – 6:30 PM | 6:30 PM – 7:45 PM | 7:30 PM – 9:00 PM)\n• Course: Complete Spoken English & Personality Development Mastery\n• Training Mode: Offline Classroom (Vijay Nagar Campus)\n• Questions / Goals (if any): \n\nLooking forward to hearing from you.\n\nBest regards,`
+  )}`,
   primaryAddress: {
     title: "Main Campus (Vijay Nagar)",
     line1: "Behind Radisson Hotel, near H.P. Petrol Pump",
