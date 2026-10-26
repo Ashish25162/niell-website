@@ -4,7 +4,7 @@ import { MapPin, Phone, MessageCircle, Clock, Building, Navigation, ShieldCheck,
 
 export default function ContactLocation() {
   return (
-    <section id="location" className="py-20 bg-white relative">
+    <section id="location" className="py-14 sm:py-20 bg-white relative">
       <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto space-y-3">
@@ -12,40 +12,40 @@ export default function ContactLocation() {
             <MapPin className="w-3.5 h-3.5" />
             Find Our Institute
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Visit NIELL Spoken English Classes in Indore
           </h2>
-          <p className="text-base sm:text-lg text-slate-600">
+          <p className="text-sm sm:text-base md:text-lg text-slate-600">
             Conveniently situated in the heart of Vijay Nagar, with easy access via iBus, city transport, and major roads.
           </p>
         </div>
 
         {/* Addresses & Map Grid */}
-        <div className="mt-14 grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-stretch">
+        <div className="mt-10 sm:mt-14 grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-stretch">
           {/* Left Column: Campus Details & Direct Connect */}
-          <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
+          <div className="lg:col-span-5 flex flex-col justify-between space-y-5 sm:space-y-6">
             {/* Primary Campus Card */}
-            <div className="bg-gradient-to-br from-blue-50/80 to-indigo-50/50 rounded-3xl p-6 sm:p-7 border-2 border-blue-200/80 shadow-md">
+            <div className="bg-gradient-to-br from-blue-50/80 to-indigo-50/50 rounded-3xl p-4 xs:p-6 sm:p-7 border-2 border-blue-200/80 shadow-md">
               <div className="flex items-center gap-2 mb-3">
                 <span className="p-2 rounded-xl bg-blue-700 text-white">
-                  <MapPin className="w-5 h-5 text-amber-300" />
+                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-amber-300" />
                 </span>
                 <div>
-                  <span className="text-[11px] uppercase tracking-wider font-extrabold text-blue-800">
+                  <span className="text-[10px] sm:text-[11px] uppercase tracking-wider font-extrabold text-blue-800">
                     Primary Classroom & Counseling Center
                   </span>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900">
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-slate-900">
                     Vijay Nagar Campus
                   </h3>
                 </div>
               </div>
 
-              <p className="text-sm text-slate-800 font-medium leading-relaxed pl-1 mb-4">
+              <p className="text-xs sm:text-sm text-slate-800 font-medium leading-relaxed pl-1 mb-4">
                 {INSTITUTE_INFO.primaryAddress.full}
               </p>
 
               {/* Photo of Building Signboard */}
-              <div className="relative h-44 sm:h-52 w-full rounded-2xl overflow-hidden shadow-inner border border-blue-200/80 mb-4">
+              <div className="relative h-40 xs:h-44 sm:h-52 w-full rounded-2xl overflow-hidden shadow-inner border border-blue-200/80 mb-4">
                 <Image
                   src="/images/building-exterior.jpg"
                   alt="NIELL Spoken English Classes Building Signboard Vijay Nagar Indore"
@@ -72,28 +72,28 @@ export default function ContactLocation() {
             </div>
 
             {/* Registered / Alternate Office Card */}
-            <div className="bg-slate-50 rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-sm">
+            <div className="bg-slate-50 rounded-3xl p-4 xs:p-6 sm:p-7 border border-slate-200 shadow-sm">
               <div className="flex items-center gap-2 mb-2">
                 <span className="p-2 rounded-xl bg-slate-800 text-white">
-                  <Building className="w-5 h-5 text-amber-300" />
+                  <Building className="w-4 h-4 sm:w-5 sm:h-5 text-amber-300" />
                 </span>
                 <div>
-                  <span className="text-[11px] uppercase tracking-wider font-extrabold text-slate-600">
+                  <span className="text-[10px] sm:text-[11px] uppercase tracking-wider font-extrabold text-slate-600">
                     Registered / Alternate Address
                   </span>
-                  <h3 className="text-lg font-bold text-slate-900">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900">
                     Bhagya Shree Colony Office
                   </h3>
                 </div>
               </div>
 
-              <p className="text-sm text-slate-700 font-medium leading-relaxed pl-1">
+              <p className="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed pl-1">
                 {INSTITUTE_INFO.registeredAddress.full}
               </p>
             </div>
 
             {/* Direct Contact Cards */}
-            <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+            <div className="bg-white rounded-3xl p-4 xs:p-6 border border-slate-200 shadow-sm space-y-3.5 sm:space-y-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
@@ -168,14 +168,14 @@ export default function ContactLocation() {
 
           {/* Right Column: Google Maps Location Embed & Route Guidance */}
           <div className="lg:col-span-7 flex flex-col h-full">
-            <div className="bg-slate-100 rounded-3xl overflow-hidden border border-slate-200 shadow-md flex-1 min-h-[380px] relative flex flex-col">
+            <div className="bg-slate-100 rounded-3xl overflow-hidden border border-slate-200 shadow-md flex-1 min-h-[300px] sm:min-h-[380px] relative flex flex-col">
               {/* Official Google Maps Verified Place Embed */}
               <iframe
                 title="Niell Spoken English Classes - Official Google Maps Location"
                 src={INSTITUTE_INFO.primaryAddress.embedUrl}
                 width="100%"
                 height="100%"
-                className="w-full h-full min-h-[380px] border-0"
+                className="w-full h-full min-h-[300px] sm:min-h-[380px] border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />

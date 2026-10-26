@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section id="why-us" className="py-20 bg-white relative">
+    <section id="why-us" className="py-14 sm:py-20 bg-white relative">
       <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto space-y-3">
@@ -49,30 +49,30 @@ export default function WhyChooseUs() {
             <CheckCircle className="w-3.5 h-3.5" />
             The NIELL Advantage
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Why NIELL is Indore&apos;s #1 Choice for English Fluency
           </h2>
-          <p className="text-base sm:text-lg text-slate-600">
+          <p className="text-sm sm:text-base md:text-lg text-slate-600">
             A scientifically designed methodology focused on active speech rather than rote memorization.
           </p>
         </div>
 
         {/* Feature Grid */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8">
+        <div className="mt-10 sm:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 xl:gap-8">
           {pillars.map((item, idx) => {
             const Icon = item.icon;
             return (
               <div
                 key={idx}
-                className="bg-slate-50/70 rounded-3xl p-8 border border-slate-200/80 hover:bg-white hover:border-blue-400 hover:shadow-xl transition-all group"
+                className="bg-slate-50/70 rounded-3xl p-5 sm:p-7 md:p-8 border border-slate-200/80 hover:bg-white hover:border-blue-400 hover:shadow-xl transition-all group"
               >
-                <div className="w-14 h-14 rounded-2xl bg-blue-700 text-white flex items-center justify-center mb-6 shadow-md group-hover:scale-110 group-hover:bg-indigo-700 transition-all">
-                  <Icon className="w-7 h-7 text-amber-300" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-blue-700 text-white flex items-center justify-center mb-5 sm:mb-6 shadow-md group-hover:scale-110 group-hover:bg-indigo-700 transition-all">
+                  <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-amber-300" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3 group-hover:text-blue-700 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   {item.description}
                 </p>
               </div>

@@ -42,29 +42,29 @@ export default function DemoForm() {
   };
 
   return (
-    <section id="book-demo" className="py-20 bg-slate-900 text-white relative overflow-hidden">
+    <section id="book-demo" className="py-14 sm:py-20 bg-slate-900 text-white relative overflow-hidden">
       {/* Decorative gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-indigo-900/40 to-slate-900/80 pointer-events-none" />
 
       <div className="relative max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-16 items-center">
           {/* Left: Persuasive text & benefits */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-6 space-y-5 sm:space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/30 text-xs font-bold uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5" />
               100% Free Demo Session
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+            <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
               Experience the Class Before You Decide
             </h2>
 
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
+            <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed">
               Don&apos;t just take our word for it. Sit in a live interactive session with{" "}
               <strong className="text-white font-bold">Ranjan Singh</strong>, participate in daily speaking activities, and experience how our practical approach eliminates your hesitation.
             </p>
 
-            <div className="space-y-4 pt-2">
+            <div className="space-y-3.5 sm:space-y-4 pt-1">
               <div className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-lg bg-blue-600/30 flex items-center justify-center flex-shrink-0 text-amber-300 mt-1">
                   <CheckCircle2 className="w-5 h-5" />
@@ -103,7 +103,7 @@ export default function DemoForm() {
             </div>
 
             {/* Direct Phone Assistance */}
-            <div className="pt-4 border-t border-slate-800 flex items-center gap-4 text-xs sm:text-sm">
+            <div className="pt-3 sm:pt-4 border-t border-slate-800 flex items-center gap-4 text-xs sm:text-sm">
               <span className="text-slate-400">Prefer to book via direct call?</span>
               <a
                 href={`tel:${INSTITUTE_INFO.phone}`}
@@ -117,9 +117,9 @@ export default function DemoForm() {
 
           {/* Right: Interactive Booking Form */}
           <div className="lg:col-span-6">
-            <div className="bg-white rounded-3xl p-6 sm:p-8 text-slate-900 shadow-2xl border border-slate-100">
-              <div className="mb-6">
-                <h3 className="text-2xl font-bold text-slate-900">
+            <div className="bg-white rounded-3xl p-4 xs:p-6 sm:p-8 text-slate-900 shadow-2xl border border-slate-100">
+              <div className="mb-5 sm:mb-6">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900">
                   Book Your Free Demo Session
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1">

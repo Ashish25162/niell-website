@@ -131,7 +131,7 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="gallery" className="py-20 bg-slate-50 relative overflow-hidden">
+    <section id="gallery" className="py-14 sm:py-20 bg-slate-50 relative overflow-hidden">
       <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto space-y-3">
@@ -139,21 +139,21 @@ export default function Gallery() {
             <Camera className="w-3.5 h-3.5 text-blue-700" />
             Campus & Classroom Tour
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Life at NIELL Spoken English Classes
           </h2>
-          <p className="text-base sm:text-lg text-slate-600">
+          <p className="text-sm sm:text-base md:text-lg text-slate-600">
             Real photos from our Vijay Nagar campus, daily speaking activities, celebrations, and outdoor workshops guided by Ranjan Singh.
           </p>
         </div>
 
         {/* Filter Tabs */}
-        <div className="mt-8 flex flex-wrap justify-center gap-2">
+        <div className="mt-6 sm:mt-8 flex flex-wrap justify-center gap-2">
           {categories.map((cat) => (
             <button
               key={cat.value}
               onClick={() => setActiveCategory(cat.value)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
+              className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
                 activeCategory === cat.value
                   ? "bg-blue-700 text-white shadow-md scale-105"
                   : "bg-white text-slate-700 hover:bg-slate-100 border border-slate-200"
@@ -165,7 +165,7 @@ export default function Gallery() {
         </div>
 
         {/* Photo Grid */}
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {filteredItems.map((item) => (
             <div
               key={item.id}
@@ -208,7 +208,7 @@ export default function Gallery() {
         </div>
 
         {/* Quick Visit Callout */}
-        <div className="mt-14 bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-3xl p-6 sm:p-8 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+        <div className="mt-10 sm:mt-14 bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-3xl p-5 sm:p-8 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-1 text-center sm:text-left">
             <h4 className="text-lg sm:text-xl font-bold flex items-center justify-center sm:justify-start gap-2">
               <Sparkles className="w-5 h-5 text-amber-300" />

@@ -8,7 +8,7 @@ export default function FloatingWhatsApp() {
   const [showTooltip, setShowTooltip] = useState(true);
 
   return (
-    <div className="fixed bottom-20 md:bottom-6 right-4 sm:right-6 z-40 flex items-end flex-col gap-2 pointer-events-auto">
+    <div className="hidden md:flex fixed bottom-6 right-6 z-40 items-end flex-col gap-2 pointer-events-auto">
       {/* Tooltip bubble */}
       {showTooltip && (
         <div className="hidden sm:flex items-center gap-2 bg-white text-slate-900 shadow-2xl border border-slate-200/90 rounded-2xl py-2 px-3.5 text-xs font-semibold animate-bounce">
