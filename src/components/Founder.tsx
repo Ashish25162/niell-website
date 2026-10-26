@@ -15,18 +15,18 @@ export default function Founder() {
             <div className="lg:col-span-5 flex flex-col items-center text-center">
               <div className="relative group flex flex-col items-center">
                 {/* Responsive Portrait Container with explicit dimensions */}
-                <div className="w-[270px] h-[370px] xs:w-[290px] xs:h-[400px] sm:w-[310px] sm:h-[430px] xl:w-[340px] xl:h-[480px] rounded-3xl bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-500 p-1.5 shadow-2xl">
+                <div className="w-[270px] h-[360px] xs:w-[290px] xs:h-[386px] sm:w-[310px] sm:h-[413px] xl:w-[340px] xl:h-[453px] rounded-3xl bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-500 p-1.5 shadow-2xl">
                   <div className="w-full h-full bg-slate-900 rounded-[22px] relative overflow-hidden flex flex-col justify-end">
                     <Image
                       src="/images/ranjan-sir-founder.jpg"
                       alt="Ranjan Singh - Founder & Master English Trainer at NIELL Indore"
                       fill
                       sizes="(max-width: 640px) 290px, (max-width: 1280px) 320px, 360px"
-                      className="object-cover object-[center_top]"
+                      className="object-cover object-center"
                       priority
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent pointer-events-none" />
-                    <div className="relative z-10 p-3.5 sm:p-4 text-center">
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent pointer-events-none" />
+                    <div className="relative z-10 p-3 sm:p-3.5 text-center">
                       <div className="inline-flex items-center gap-1 text-[10px] font-extrabold uppercase tracking-wider text-amber-300 bg-black/75 px-2.5 py-0.5 rounded-full backdrop-blur-sm mb-1">
                         Founder & Chief Mentor
                       </div>
