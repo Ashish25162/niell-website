@@ -40,7 +40,10 @@ export default function Hero() {
             {/* Subheading */}
             <p className="text-sm xs:text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed max-w-3xl mx-auto lg:mx-0">
               Transform your hesitation into fluent communication. Join{" "}
-              <strong className="text-slate-900 font-bold">NIELL Spoken English Classes</strong> in{" "}
+              <strong className="text-slate-900 font-bold">
+                NIELL (National Institute of English Language and Literacy)
+              </strong>{" "}
+              Spoken English Classes in{" "}
               <span className="text-blue-800 font-semibold underline decoration-blue-300 decoration-2">
                 Vijay Nagar, Indore
               </span>

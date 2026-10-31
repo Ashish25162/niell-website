@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Founded and mentored by <strong className="text-slate-200">Ranjan Singh</strong>, NIELL is Indore&apos;s premier institute dedicated to practical English speaking, hesitation removal, and corporate interview readiness.
+              Founded and mentored by <strong className="text-slate-200">Ranjan Singh</strong>, NIELL (National Institute of English Language and Literacy) is Indore&apos;s premier institute dedicated to practical English speaking, hesitation removal, and corporate interview readiness.
             </p>
 
             <div className="pt-2 flex flex-col gap-2 text-xs">
@@ -194,7 +194,7 @@ export default function Footer() {
         {/* Bottom Copyright */}
         <div className="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>
-            © {currentYear} NIELL Spoken English Classes. All rights reserved. Founded by Ranjan Singh.
+            © {currentYear} NIELL – National Institute of English Language and Literacy. All rights reserved. Founded by Ranjan Singh.
           </p>
           <p className="flex items-center gap-1">
             Empowering students in Indore to speak fluent English.

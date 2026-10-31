@@ -1,5 +1,6 @@
 export const INSTITUTE_INFO = {
   name: "NIELL Spoken English Classes",
+  fullName: "National Institute of English Language and Literacy",
   shortName: "NIELL English",
   tagline: "Join and Feel the Changes",
   founder: "Ranjan Singh",
@@ -130,6 +131,11 @@ export const TESTIMONIALS = [
 ];
 
 export const FAQS = [
+  {
+    question: "What does NIELL stand for?",
+    answer:
+      "NIELL stands for National Institute of English Language and Literacy. Founded and mentored by master trainer Ranjan Singh in Vijay Nagar, Indore, our institute specializes in spoken English fluency, hesitation removal, stage confidence, and corporate interview preparation.",
+  },
   {
     question: "Where is NIELL Spoken English Classes located in Indore?",
     answer:

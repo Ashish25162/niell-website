@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Join and Feel the Changes with NIELL Spoken English Classes in Vijay Nagar, Indore (Behind Radisson Hotel). Mentored by Ranjan Singh. Master spoken English fluency, hesitation removal, grammar, public speaking & interview preparation. Book a free demo class today!",
   keywords: [
     "NIELL spoken english classes",
+    "National Institute of English Language and Literacy",
     "NIELL English Indore",
     "Best spoken English classes in Indore",
     "Spoken English institute Vijay Nagar Indore",
@@ -88,7 +89,11 @@ export default function RootLayout({
         "@type": ["EducationalOrganization", "LocalBusiness"],
         "@id": "https://niell.in/#organization",
         "name": "NIELL Spoken English Classes",
-        "alternateName": "NIELL English Classes Indore",
+        "legalName": "National Institute of English Language and Literacy",
+        "alternateName": [
+          "NIELL English Classes Indore",
+          "National Institute of English Language and Literacy"
+        ],
         "slogan": "Join and Feel the Changes",
         "logo": "https://niell.in/logo.png",
         "image": "https://niell.in/logo.png",
