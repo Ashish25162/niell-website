@@ -22,7 +22,7 @@ export default function DemoForm() {
 
     // Construct structured WhatsApp message for instant delivery to 6266394121
     const textLines = [
-      `🎓 *NEW DEMO CLASS INQUIRY - NIELL INDORE*`,
+      `🎓 *NEW DEMO CLASS ENQUIRY - NIELL INDORE*`,
       `----------------------------------------`,
       `👤 *Student Name:* ${formData.name}`,
       `📱 *WhatsApp Number:* ${formData.phone}`,
@@ -123,7 +123,7 @@ export default function DemoForm() {
                   Book Your Free Demo Session
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                  Fill in your details below. Your inquiry will be forwarded directly to WhatsApp (
+                  Fill in your details below. Your enquiry will be forwarded directly to WhatsApp (
                   <span className="font-semibold text-blue-700">{INSTITUTE_INFO.phone}</span>) for instant batch confirmation.
                 </p>
               </div>
@@ -134,10 +134,10 @@ export default function DemoForm() {
                     <CheckCircle2 className="w-10 h-10" />
                   </div>
                   <h4 className="text-xl font-bold text-slate-900">
-                    Inquiry Generated Successfully!
+                    Enquiry Generated Successfully!
                   </h4>
                   <p className="text-sm text-slate-600 max-w-sm mx-auto">
-                    We have redirected your inquiry to Ranjan Sir on WhatsApp at{" "}
+                    We have redirected your enquiry to Ranjan Sir on WhatsApp at{" "}
                     <strong>{INSTITUTE_INFO.formattedPhone}</strong>.
                   </p>
                   <div className="pt-2 flex flex-col sm:flex-row gap-3 justify-center">

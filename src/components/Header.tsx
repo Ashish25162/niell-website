@@ -107,7 +107,7 @@ export default function Header() {
           <div className="hidden sm:flex items-center gap-3">
             <a
               href={`https://wa.me/${INSTITUTE_INFO.whatsappNumber}?text=${encodeURIComponent(
-                "Hi Ranjan Sir, I want to inquire about Spoken English classes at NIELL Indore."
+                "Hi Ranjan Sir, I want to enquire about Spoken English classes at NIELL Indore."
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -173,7 +173,7 @@ export default function Header() {
             </a>
             <a
               href={`https://wa.me/${INSTITUTE_INFO.whatsappNumber}?text=${encodeURIComponent(
-                "Hi Ranjan Sir, I want to inquire about Spoken English classes at NIELL Indore."
+                "Hi Ranjan Sir, I want to enquire about Spoken English classes at NIELL Indore."
               )}`}
               target="_blank"
               rel="noopener noreferrer"

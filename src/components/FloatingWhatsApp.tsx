@@ -13,7 +13,7 @@ export default function FloatingWhatsApp() {
       {showTooltip && (
         <div className="hidden sm:flex items-center gap-2 bg-white text-slate-900 shadow-2xl border border-slate-200/90 rounded-2xl py-2 px-3.5 text-xs font-semibold animate-bounce">
           <span className="flex h-2 w-2 rounded-full bg-emerald-500"></span>
-          <span>Inquire with Ranjan Sir on WhatsApp!</span>
+          <span>Enquiry on WhatsApp!</span>
           <button
             onClick={() => setShowTooltip(false)}
             className="text-slate-400 hover:text-slate-600 ml-1 p-0.5"

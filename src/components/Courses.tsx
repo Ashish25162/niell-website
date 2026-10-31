@@ -247,7 +247,7 @@ export default function Courses() {
                       className="w-full flex items-center justify-center gap-2 py-2.5 sm:py-3 px-4 rounded-xl text-xs sm:text-sm font-bold text-emerald-300 bg-emerald-950/60 hover:bg-emerald-900/80 border border-emerald-500/40 transition-colors"
                     >
                       <MessageCircle className="w-4 h-4 fill-emerald-400 text-emerald-400" />
-                      <span>Inquire on WhatsApp</span>
+                      <span>Enquiry on WhatsApp</span>
                     </a>
                   </div>
                 </div>
@@ -270,13 +270,13 @@ export default function Courses() {
           </div>
           <a
             href={`https://wa.me/${INSTITUTE_INFO.whatsappNumber}?text=${encodeURIComponent(
-              "Hi Ranjan Sir, I am inquiring about customized 1-on-1 or corporate English training."
+              "Hi Ranjan Sir, I have an enquiry regarding customized 1-on-1 or corporate English training."
             )}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex-shrink-0 inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl font-bold text-xs sm:text-sm bg-amber-400 text-slate-950 hover:bg-amber-300 transition-all shadow-md"
           >
-            <span>Inquire for Custom Batches</span>
+            <span>Enquiry for Custom Batches</span>
             <ArrowRight className="w-4 h-4" />
           </a>
         </div>

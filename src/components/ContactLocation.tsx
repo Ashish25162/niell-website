@@ -153,7 +153,7 @@ export default function ContactLocation() {
                 <a
                   href={INSTITUTE_INFO.emailMailto}
                   className="px-3.5 py-1.5 rounded-lg text-xs font-bold text-amber-800 bg-amber-50 hover:bg-amber-100 border border-amber-200"
-                  title="Send pre-filled inquiry email to NIELL"
+                  title="Send pre-filled enquiry email to NIELL"
                 >
                   Email Us
                 </a>

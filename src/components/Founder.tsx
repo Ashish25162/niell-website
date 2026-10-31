@@ -54,14 +54,14 @@ export default function Founder() {
                   className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs font-bold text-emerald-950 bg-emerald-400 hover:bg-emerald-300 shadow transition-all"
                 >
                   <MessageCircle className="w-4 h-4" />
-                  <span>WhatsApp Sir</span>
+                  <span>WhatsApp</span>
                 </a>
                 <a
                   href={`tel:${INSTITUTE_INFO.phone}`}
                   className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs font-bold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>Call Sir</span>
+                  <span>Call</span>
                 </a>
               </div>
             </div>

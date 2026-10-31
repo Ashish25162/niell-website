@@ -81,7 +81,7 @@ export default function Hero() {
 
               <a
                 href={`https://wa.me/${INSTITUTE_INFO.whatsappNumber}?text=${encodeURIComponent(
-                  "Hello Ranjan Sir, I want to inquire about joining NIELL Spoken English classes in Indore."
+                  "Hello Ranjan Sir, I want to enquire about joining NIELL Spoken English classes in Indore."
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

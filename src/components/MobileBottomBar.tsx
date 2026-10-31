@@ -20,12 +20,12 @@ export default function MobileBottomBar() {
         {/* WhatsApp Button */}
         <a
           href={`https://wa.me/${INSTITUTE_INFO.whatsappNumber}?text=${encodeURIComponent(
-            "Hello Ranjan Sir, I want to inquire about Spoken English classes at NIELL Indore."
+            "Hello Ranjan Sir, I want to enquire about Spoken English classes at NIELL Indore."
           )}`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center py-1.5 px-1 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white shadow-sm transition-colors"
-          aria-label="WhatsApp Ranjan Sir"
+          aria-label="WhatsApp NIELL"
         >
           <MessageCircle className="w-5 h-5 fill-white text-emerald-500" />
           <span className="text-[11px] font-bold mt-0.5">WhatsApp</span>
